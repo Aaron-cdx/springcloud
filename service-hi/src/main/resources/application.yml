@@ -1,0 +1,10 @@
+server:
+  port: 8762
+# 8763是它启动的第二个端口号，用于并行处理，构造集群，可以观察到负载均衡效果
+spring:
+  application:
+    name: service-hi
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
